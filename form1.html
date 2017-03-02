@@ -1,0 +1,175 @@
+<html>
+	<head>
+		<title>HTML and CSS form</title>
+		<script src="1.js"></script>
+		<style>
+		.f1{
+			float:right;
+			margin-right: 50%;
+			width:200px;
+		}
+		.f2 {
+			float: left;
+		}
+		.padding_15 {
+			padding: 15px;
+		}
+
+		.margin_15_0 {
+			margin: 15px 0px;
+		}
+
+			h1 {
+				color:red
+			}
+
+			h2 {
+				color:green
+			}
+
+
+
+		</style>
+	</head>
+	<body>
+		<form name="myForm" onsubmit="return validateForm()" style="width: 50%; margin: 50px;" method="post">
+			<h1>REGISTRATION FORM</h1>
+			<fieldset>
+				<legend><h2> ACCOUNT DETAILS </h2></legend>
+				<div class="padding_15">
+					<div class="margin_15_0">
+						<label class="f2" for="">Email</label>
+						<div class="f1">
+							<input class="" type="text" name="uemail" placeholder="abc@gmail.com">
+							<small id="error_uemail"></small>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+					<div class="margin_15_0">
+						<label for="">Password</label>
+						<div class="f1">
+						<input class=""  type="password" name="upassword" placeholder="must have atleast 6digit">
+						<small id="error_upassword"></small>
+					</div>
+					<div style="clear:both"></div>
+				</div>
+			</div>
+			</fieldset>
+
+			<fieldset>
+				<legend><h2> PERSONAL DETAILS</h2></legend>
+				<div class="padding_15">
+					<div class="margin_15_0">
+						<label for="">First Name</label>
+						<div class="f1">
+						<input class="" type="text" name="fname" placeholder="first name">
+						<small id="error_fname"></small>
+					</div>
+					<div style="clear:both"></div>
+				</div>
+					<div class="margin_15_0">
+						<label for="">Last Name</label>
+						<div class="f1">
+						<input class="" type="text" name="lname" placeholder="last name">
+						<small id="error_lname"></small>
+					</div>
+					<div style="clear:both"></div>
+				</div>
+					<div class="margin_15_0">
+						<label for="">Phone No.</label>
+						<div class="f1">
+						<input class="" type="tel" name="telno" placeholder="mobile no.">
+						<small id="error_telno"></small>
+					</div>
+					<div style="clear:both"></div>
+				</div>
+					<div style="clear:both"></div>
+					<div class="margin_15_0">
+						<label for="">City</label>
+						<div class="f1">
+						<input class="" list="city" name="ucity">
+						<datalist id="city">
+							<option value="new delhi">
+							<option value="noida">
+							<option value="gurgaon">
+	                        <option value="sirsa">
+						    <option value="bathinda">
+						</datalist>
+						<small id="error_ucity"></small>
+					</div>
+					<div style="clear:both"></div>
+				</div>
+					<div class="margin_15_0">
+						<label for="">Country</label>
+						<div class="f1">
+						<input class ="" list="country" name="ucountry">
+						<datalist id="country">
+							<option value="india">
+							<option value="australia">
+							<option value="china">
+							<option value="georgia">
+						</datalist>
+
+					<small id="error_ucountry"></small>
+				</div>
+				<div style="clear:both"></div>
+				</div>
+			</div>
+			</fieldset>
+			<fieldset>
+				<legend><h2>FURTHER INFORMATION</h2></legend>
+				<div class="padding_15">
+					<div class="margin_15_0">
+						<label for="">Gender</label>
+						<input type="radio" name="gender" value="male" checked>Male
+						<input type="radio" name="gender" value="female">female
+						<input type="radio" name="gender" value="other">other
+					</div>
+					<div class="margin_15_0">
+						<label for="">Date</label>
+						<div class="f1">
+						<input class="" type="date" name="birthday">
+						<small id="error_birthday"></small>
+					</div>
+					<div style="clear:both"></div>
+				</div>
+					<div class="margin_15_0">
+	 				<label for="">Nationality</label>
+					<div class="f1">
+					<input class="" list="nationality" name="unationality">
+					<datalist id="nationality">
+						<option value="indian">
+						<option value="bangladeshi">
+						<option value="british">
+						<option value="chinese">
+						</datalist>
+
+					<small id="error_unationality"></small>
+				</div>
+				<div style="clear:both"></div>
+				</div>
+			</div>
+			</fieldset>
+			<fieldset>
+				<legend><h2>TERMS and MAILING</h2></legend>
+				<div class="padding_15">
+					<div class="margin_15_0">
+						<input type="checkbox" name="a1" value="accept">I accept the Terms and Conditions.
+						<small id="error_a1"></small>
+						<div style="clear:both"></div>
+					</div>
+
+					<div class="margin_15_0">
+						<input type="checkbox" name="a2" value="receive">I want to receive personlized offers by your site.
+						<small id="error_a2"></small>
+						<div style="clear:both"></div>
+					</div>
+
+					<div class="margin_15_0">
+						<input type="Submit" name="submit" >
+					</div>
+				</div>
+			</fieldset>
+	    </form>
+	</body>
+</html>
